@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../style.css" />
+    <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css" />
+    <script src="../../bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../../bootstrap-icons/bootstrap-icons.css" />
+    <link rel="icon" href="../../images/logo1.png">
+    <title>Keonibeng</title>
+</head>
+
+<body>
+    <header>
+
+    </header>
+
+    <main>
+        <div class="sidenav">
+            <div class="sidenav-content">
+                <div class="logo">
+                    <img src="../../images/Logo_Transpa.png" width="80px" />
+                </div>
+                <hr>
+                <h5 class="mb-3">Reports</h5>
+                <ul>
+                    <li>
+                        <a href="pending.html" class="btn-sidenav" title="Pending">
+                            <i class="bi bi-clock-history"></i>
+                            <span>
+                                &nbsp; Pending
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="on-progress.html" class="btn-sidenav" title="On-progress">
+                            <i class="bi bi-bar-chart-steps"></i>
+                            <span>
+                                &nbsp; On-progress
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="delivered.html" class="btn-sidenav" title="Delivered">
+                            <i class="bi bi-cart-check"></i>
+                            <span>
+                                &nbsp; Delivered
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="cancelled.html" class="btn-sidenav" title="Cancelled">
+                            <i class="bi bi-exclamation-diamond"></i>
+                            <span>
+                                &nbsp; Cancelled
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="statistics.html" class="btn-sidenav" title="Statistics">
+                            <i class="bi bi-bar-chart-line"></i>
+                            <span>
+                                &nbsp; Statistics
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="financial-summary.html" class="active" title="Financial Summary">
+                            <i class="bi bi-receipt-cutoff"></i>
+                            <span>
+                                &nbsp; Financial Summary
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+                <hr>
+                <h5 class="mb-3">Settings</h5>
+                <ul>
+                    <li>
+                        <a href="../Settings/account.html" class="btn-sidenav" title="Account">
+                            <i class="bi bi-person-circle"></i>
+                            <span>
+                                &nbsp; Account
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../../Other/about.html" class="btn-sidenav" title="About">
+                            <i class="bi bi-info-circle"></i>
+                            <span>
+                                &nbsp; About
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="btn-sidenav" title="Backup Database" data-bs-toggle="modal"
+                        data-bs-target="#backupModal">
+                            <i class="bi bi-cloud-download"></i>
+                            <span>
+                                &nbsp; Backup Database
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+                <hr>
+                <div class="row">
+                    <div class="col-md-2 col-xs-12">
+                        <h6>ID:</h6>
+                    </div>
+                    <div class="col-md-10 col-xs-12">
+                        <h6>12345</h6>
+                    </div>
+                </div>
+                <div class="row mt-2">
+                    <div class="col-md-3 col-xs-12">
+                        <h6>User:</h6>
+                    </div>
+                    <div class="col-md-8 col-xs-12">
+                        <h6>Kent Anthony</h6>
+                    </div>
+                </div>
+                <div class=" mt-4">
+                    <a href="../../index.html" class="btn btn-sm btn-signout" title="SIGN OUT">
+                        <i class="bi bi-box-arrow-left"></i>
+                        <span>
+                            &nbsp; SIGN OUT
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div> <!-- end of sidenav -->
+        
+        <div class="container border rounded p-4 con-1" id="table">
+            <h1 class="text-center mb-5"><strong>FINANCIAL SUMMARY</strong></h1>
+            <div class="search">
+                <div class="me-2">
+                    <button class="btn-view">
+                        <i class="bi bi-box-arrow-down"></i>
+                        &nbsp;PDF</button>
+                    <button class="btn-view">
+                        <i class="bi bi-box-arrow-down"></i>
+                        &nbsp;XLS</button>
+                    <button class="btn-view">
+                        <i class="bi bi-box-arrow-down"></i>
+                        &nbsp;CSV</button>
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text">
+                        <i class="bi bi-calendar"></i>
+                    </span>
+                    <select class="form-select">
+                        <option selected>-select filter-</option>
+                        <option>Week</option>
+                        <option>Month</option>
+                        <option>Year</option>
+                    </select>
+                </div>
+            </div>
+            <div class="container mb-4">
+                <div class="table-responsive">
+                    <table class="table table-hover text-center">
+                        <thead class="text-bg-secondary">
+                            <tr>
+                                <th>MONTH</th>
+                                <th>CAPITAL</th>
+                                <th>EXPENSES</th>
+                                <th>BALANCE</th>
+                                <th>INCOME</th>
+                                <th>ACTION</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>JANUARY</td>
+                                <td>₱500,000</td>
+                                <td>₱410,300</td>
+                                <td>₱89,700</td>
+                                <td>₱850,100</td>
+                                <td>
+                                    <a href="#">
+                                        <button class="btn-view" title="PRINT">
+                                            <i class="bi bi-printer p-1"></i>
+                                        </button>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>FEBRUARY</td>
+                                <td>₱500,000</td>
+                                <td>₱420,500</td>
+                                <td>₱79,500</td>
+                                <td>₱820,500</td>
+                                <td>
+                                    <a href="#">
+                                        <button class="btn-view" title="PRINT">
+                                            <i class="bi bi-printer p-1"></i>
+                                        </button>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>MARCH</td>
+                                <td>₱500,000</td>
+                                <td>₱418,050</td>
+                                <td>₱81,950</td>
+                                <td>₱856,654</td>
+                                <td>
+                                    <a href="#">
+                                        <button class="btn-view" title="PRINT">
+                                            <i class="bi bi-printer p-1"></i>
+                                        </button>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>APRIL</td>
+                                <td>₱500,000</td>
+                                <td>₱435,651</td>
+                                <td>₱64,349</td>
+                                <td>₱910,752</td>
+                                <td>
+                                    <a href="#">
+                                        <button class="btn-view" title="PRINT">
+                                            <i class="bi bi-printer p-1"></i>
+                                        </button>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>MAY</td>
+                                <td>₱500,000</td>
+                                <td>₱456,899</td>
+                                <td>₱43,101</td>
+                                <td>₱955,132</td>
+                                <td>
+                                    <a href="#">
+                                        <button class="btn-view" title="PRINT">
+                                            <i class="bi bi-printer p-1"></i>
+                                        </button>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>JUNE</td>
+                                <td>₱500,000</td>
+                                <td>₱410,300</td>
+                                <td>₱89,700</td>
+                                <td>₱986,356</td>
+                                <td>
+                                    <a href="#">
+                                        <button class="btn-view" title="PRINT">
+                                            <i class="bi bi-printer p-1"></i>
+                                        </button>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>JULY</td>
+                                <td>₱500,000</td>
+                                <td>₱420,500</td>
+                                <td>₱79,500</td>
+                                <td>₱103,500,336</td>
+                                <td>
+                                    <a href="#">
+                                        <button class="btn-view" title="PRINT">
+                                            <i class="bi bi-printer p-1"></i>
+                                        </button>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>AUGUST</td>
+                                <td>₱500,000</td>
+                                <td>₱418,050</td>
+                                <td>₱81,950</td>
+                                <td>₱113,650,129</td>
+                                <td>
+                                    <a href="#">
+                                        <button class="btn-view" title="PRINT">
+                                            <i class="bi bi-printer p-1"></i>
+                                        </button>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>SEPTEMBER</td>
+                                <td>₱500,000</td>
+                                <td>₱435,651</td>
+                                <td>₱64,349</td>
+                                <td>₱128,552,358</td>
+                                <td>
+                                    <a href="#">
+                                        <button class="btn-view" title="PRINT">
+                                            <i class="bi bi-printer p-1"></i>
+                                        </button>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>OCTOBER</td>
+                                <td>₱500,000</td>
+                                <td>₱456,899</td>
+                                <td>₱43,101</td>
+                                <td>₱133,589,323</td>
+                                <td>
+                                    <a href="#">
+                                        <button class="btn-view" title="PRINT">
+                                            <i class="bi bi-printer p-1"></i>
+                                        </button>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>NOVEMBER</td>
+                                <td>₱500,000</td>
+                                <td>₱435,651</td>
+                                <td>₱64,349</td>
+                                <td>₱143,000,897</td>
+                                <td>
+                                    <a href="#">
+                                        <button class="btn-view" title="PRINT">
+                                            <i class="bi bi-printer p-1"></i>
+                                        </button>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>DECEMBER</td>
+                                <td>₱500,000</td>
+                                <td>₱456,899</td>
+                                <td>₱43,101</td>
+                                <td>₱158,123,654</td>
+                                <td>
+                                    <a href="#">
+                                        <button class="btn-view" title="PRINT">
+                                            <i class="bi bi-printer p-1"></i>
+                                        </button>
+                                    </a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- Backup Database Modal-->
+        <div class="modal fade" id="backupModal">
+            <div class="modal-dialog modal-md">
+                <div class="modal-content">
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h3 class="modal-title">Backup Database</h3>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <p class="text-center text-success">Database backup has been successfully saved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End of Backup Database Modal-->
+    </main>
+</body>
+
+</html>

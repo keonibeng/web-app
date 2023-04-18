@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css" />
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../bootstrap-icons/bootstrap-icons.css" />
+    <link rel="icon" href="../images/logo1.png">
+    <title>Keonibeng</title>
+</head>
+
+<body>
+    <main class="custom-cont">
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <div class="container logo-container mt-5">
+                        <img src="../images/logo.png" alt="Keonibeng Logo" />
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <div class="container login-container border rounded">
+                        <h2 class="text-center mt-4">PASSWORD RECOVERY</h2>
+                        <p class="text-center mt-4">
+                            We have sent an Access Code from your number +********499.<br />
+                            Enter the code below to recover your password.
+                        </p>
+                        <div class="form-ni">
+                            <div class="form-floating">
+                                <input type="number" name="code" id="code" class="form-control mt-3 mb-3"
+                                    placeholder="Access Code" required/>
+                                <label for="code">Access Code</label>
+                            </div>
+                            <button class="buttons mb-2" data-bs-toggle="modal"
+                                data-bs-target="#recoverModal">
+                                    RECOVER
+                                </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Recover Modal-->
+        <div class="modal fade" id="recoverModal">
+            <div class="modal-dialog modal-md">
+                <div class="modal-content">
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h3 class="modal-title">Confirmation</h3>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <p class="text-center text-success">Account successfully recovered.</p>
+                        <div class="split mt-4">
+                            <div></div>
+                            <div>
+                                <a href="../admin-login.html">
+                                    <button class="btn btn-success btn-sm">
+                                        Continue&nbsp;
+                                        <i class="bi bi-arrow-right"></i>
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End of Recover Modal-->
+    </main>
+    <footer>
+        <a href="##" id="toggleChatbox">
+            <i class="bi bi-chat-dots-fill" title="Chat with us!" id="chat"></i>
+        </a>
+        <div class="chatbox" id="chatBox">
+            <div class="chatbox-header">
+                <i class="bi bi-x" id="close" title="Close"></i>
+            </div>
+            <div class="chatbox-body">
+                <ul>
+                    <li>
+                        <img src="../images/man_holding_heart.svg" alt="Man Holding Heart">
+                    </li>
+                    <li class="chat">
+                        <p>Good day! How can we help you?</p>
+                    </li>
+                    <li>
+                        <i class="bi bi-person-circle"></i>
+                        <div class="chat-typing">
+                            <div class="chat-typing-indicators">
+                                <div class="chat-typing-indicator"></div>
+                                <div class="chat-typing-indicator"></div>
+                                <div class="chat-typing-indicator"></div>
+                            </div>
+                        </div>
+                        
+                    </li>
+                </ul>
+            </div>
+            <div class="chatbox-footer">
+                <i class="bi bi-camera-fill"></i>
+                <input type="text" placeholder="Type here..." />
+                <i class="bi bi-send" title="Send"></i>
+            </div>
+        </div>
+        <div class="split">
+            <p class="text-white">Visit us:</p>
+            <div class="social-links">
+                <a href="https://facebook.com/Keonibeng" class="" target="_blank" title="Facebook">
+                    <i class="bi bi-facebook"></i>
+                </a>
+                <a href="https://instagram.com/Keonibeng" class="" target="_blank" title="Intagram">
+                    <i class="bi bi-instagram"></i>
+                </a>
+                <a href="https://twitter.com/Keonibeng" class="" target="_blank" title="Twitter">
+                    <i class="bi bi-twitter"></i>
+                </a>
+            </div>
+        </div>
+        <div class="split">
+            <p class="text-white">Subscribe to newsletter:</p>
+            <input type="email" class="form-control" name="email" placeholder="Enter email..." />
+            <input type="button" value="Submit" class="btn btn-secondary ms-2" />
+        </div>
+    </footer>
+</body>
+
+</html>

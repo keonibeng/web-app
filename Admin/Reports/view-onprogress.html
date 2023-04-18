@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../style.css" />
+    <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css" />
+    <script src="../../bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../../bootstrap-icons/bootstrap-icons.css" />
+    <link rel="icon" href="../../images/logo1.png">
+    <title>Keonibeng</title>
+</head>
+
+<body>
+    <header>
+
+    </header>
+
+    <main>
+        <div class="sidenav">
+            <div class="sidenav-content">
+                <div class="logo">
+                    <img src="../../images/Logo_Transpa.png" width="80px" />
+                </div>
+                <hr>
+                <h5 class="mb-3">Reports</h5>
+                <ul>
+                    <li>
+                        <a href="pending.html" class="btn-sidenav" title="Pending">
+                            <i class="bi bi-clock-history"></i>
+                            <span>
+                                &nbsp; Pending
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="on-progress.html" class="active" title="On-progress">
+                            <i class="bi bi-bar-chart-steps"></i>
+                            <span>
+                                &nbsp; On-progress
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="delivered.html" class="btn-sidenav" title="Delivered">
+                            <i class="bi bi-cart-check"></i>
+                            <span>
+                                &nbsp; Delivered
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="cancelled.html" class="btn-sidenav" title="Cancelled">
+                            <i class="bi bi-exclamation-diamond"></i>
+                            <span>
+                                &nbsp; Cancelled
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="statistics.html" class="btn-sidenav" title="Statistics">
+                            <i class="bi bi-bar-chart-line"></i>
+                            <span>
+                                &nbsp; Statistics
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="financial-summary.html" class="btn-sidenav" title="Financial Summary">
+                            <i class="bi bi-receipt-cutoff"></i>
+                            <span>
+                                &nbsp; Financial Summary
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+                <hr>
+                <h5 class="mb-3">Settings</h5>
+                <ul>
+                    <li>
+                        <a href="../Settings/account.html" class="btn-sidenav" title="Account">
+                            <i class="bi bi-person-circle"></i>
+                            <span>
+                                &nbsp; Account
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../../Other/about.html" class="btn-sidenav" title="About">
+                            <i class="bi bi-info-circle"></i>
+                            <span>
+                                &nbsp; About
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="btn-sidenav" title="Backup Database" data-bs-toggle="modal"
+                        data-bs-target="#backupModal">
+                            <i class="bi bi-cloud-download"></i>
+                            <span>
+                                &nbsp; Backup Database
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+                <hr>
+                <div class="row">
+                    <div class="col-md-2 col-xs-12">
+                        <h6>ID:</h6>
+                    </div>
+                    <div class="col-md-10 col-xs-12">
+                        <h6>12345</h6>
+                    </div>
+                </div>
+                <div class="row mt-2">
+                    <div class="col-md-3 col-xs-12">
+                        <h6>User:</h6>
+                    </div>
+                    <div class="col-md-8 col-xs-12">
+                        <h6>Kent Anthony</h6>
+                    </div>
+                </div>
+                <div class=" mt-4">
+                    <a href="../../index.html" class="btn btn-signout" title="SIGN OUT">
+                        <i class="bi bi-box-arrow-left"></i>
+                        <span>
+                            &nbsp; SIGN OUT
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div> <!-- end of sidenav -->
+        
+        <div class="container border rounded p-4 con-1" id="table">
+            <h1 class="mb-5"><strong>ON-PROGRESS REQUEST</strong></h1>
+            <div class="search mb-2">
+                <div class="me-2">
+                    <button class="btn-view">
+                        <i class="bi bi-box-arrow-down"></i>
+                        &nbsp;PDF</button>
+                    <button class="btn-view">
+                        <i class="bi bi-box-arrow-down"></i>
+                        &nbsp;XLS</button>
+                    <button class="btn-view">
+                        <i class="bi bi-box-arrow-down"></i>
+                        &nbsp;CSV</button>
+                </div>
+                <div>
+                    <p>Name of Requester: <strong>Shizuko</strong></p>
+                </div>
+            </div>
+            <div class="container mb-4">
+                <div class="table-responsive">
+                    <table class="table table-hover text-center">
+                        <thead class="text-bg-secondary">
+                            <tr>
+                                <th>ITEM NAME</th>
+                                <th>ESTIMATED PRICE</th>
+                                <th>QUANTITY</th>
+                                <th>BRAND NAME</th>
+                                <th>CATEGORY</th>
+                                <th>SIZE</th>
+                                <th>SULODLAN TYPE</th>
+                                <th>STORE/SHOP</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>Sardines</td>
+                                <td>25.00</td>
+                                <td>2</td>
+                                <td>555</td>
+                                <td>VIAND</td>
+                                <td>Other</td>
+                                <td>CAN</td>
+                                <td>Inday Store</td>
+                            </tr>
+                            <tr>
+                                <td>Tomato</td>
+                                <td>5.00</td>
+                                <td>5</td>
+                                <td>Other</td>
+                                <td>VEGETABLES</td>
+                                <td>Other</td>
+                                <td>POUCH</td>
+                                <td>Tonyo Shop</td>
+                            </tr>
+                            <tr>
+                                <td>Slippers</td>
+                                <td>120.00</td>
+                                <td>1</td>
+                                <td>Crocs</td>
+                                <td>FOOTWEAR</td>
+                                <td>10</td>
+                                <td>POUCH</td>
+                                <td>Toto Store</td>
+                            </tr>
+                            <tr>
+                                <td>Spoon</td>
+                                <td>10.00</td>
+                                <td>12</td>
+                                <td>Other</td>
+                                <td>UTENSILS</td>
+                                <td>Other</td>
+                                <td>Other</td>
+                                <td>Toto Store</td>
+                            </tr>
+                            <tr>
+                                <td>Diaper</td>
+                                <td>15.00</td>
+                                <td>3</td>
+                                <td>Pampers</td>
+                                <td>Other</td>
+                                <td>LARGE</td>
+                                <td>POUCH</td>
+                                <td>Antonio Shop</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="split">
+                <div>
+                    <h5 class="mb-4"><strong>TOTAL ITEM(S): 5</strong></h5>
+                </div>
+                <div>
+                    <span>Previous &nbsp;</span>
+                    <button class="btn-nav" title="Previous">
+                        <i class="bi bi-chevron-left p-1"></i>
+                    </button>
+                    <button class="btn-nav" title="Next">
+                        <i class="bi bi-chevron-right p-1"></i>
+                    </button>
+                    <span>&nbsp; Next</span>
+                </div>
+            </div>
+            <div class="split">
+                <div></div>
+                <button class="btn-profile mt-5">
+                    Confirm &nbsp;<i class="bi bi-arrow-right"></i>
+                </button>
+            </div>
+            
+        </div>
+        <!-- Backup Database Modal-->
+        <div class="modal fade" id="backupModal">
+            <div class="modal-dialog modal-md">
+                <div class="modal-content">
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h3 class="modal-title">Backup Database</h3>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <p class="text-center text-success">Database backup has been successfully saved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End of Backup Database Modal-->
+    </main>
+</body>
+
+</html>

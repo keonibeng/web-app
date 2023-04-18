@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../style.css" />
+    <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css" />
+    <script src="../../bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../../bootstrap-icons/bootstrap-icons.css" />
+    <link rel="icon" href="../../images/logo1.png">
+    <title>Keonibeng</title>
+</head>
+
+<body>
+    <header>
+
+    </header>
+
+    <main>
+        <div class="sidenav">
+            <div class="sidenav-content">
+                <div class="logo">
+                    <img src="../../images/Logo_Transpa.png" width="80px" />
+                </div>
+                <hr>
+                <h5 class="mb-3">Reports</h5>
+                <ul>
+                    <li>
+                        <a href="../Reports/pending.html" class="btn-sidenav" title="Pending">
+                            <i class="bi bi-clock-history"></i>
+                            <span>
+                                &nbsp; Pending
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../Reports/on-progress.html" class="btn-sidenav" title="On-progress">
+                            <i class="bi bi-bar-chart-steps"></i>
+                            <span>
+                                &nbsp; On-progress
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../Reports/delivered.html" class="btn-sidenav" title="Delivered">
+                            <i class="bi bi-cart-check"></i>
+                            <span>
+                                &nbsp; Delivered
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../Reports/cancelled.html" class="btn-sidenav" title="Cancelled">
+                            <i class="bi bi-exclamation-diamond"></i>
+                            <span>
+                                &nbsp; Cancelled
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../Reports/statistics.html" class="btn-sidenav" title="Statistics">
+                            <i class="bi bi-bar-chart-line"></i>
+                            <span>
+                                &nbsp; Statistics
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../Reports/financial-summary.html" class="btn-sidenav" title="Financial Summary">
+                            <i class="bi bi-receipt-cutoff"></i>
+                            <span>
+                                &nbsp; Financial Summary
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+                <hr>
+                <h5 class="mb-3">Settings</h5>
+                <ul>
+                    <li>
+                        <a href="../Settings/account.html" class="active" title="Account">
+                            <i class="bi bi-person-circle"></i>
+                            <span>
+                                &nbsp; Account
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../../Other/about.html" class="btn-sidenav" title="About">
+                            <i class="bi bi-info-circle"></i>
+                            <span>
+                                &nbsp; About
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="btn-sidenav" title="Backup Database" data-bs-toggle="modal"
+                            data-bs-target="#backupModal">
+                            <i class="bi bi-cloud-download"></i>
+                            <span>
+                                &nbsp; Backup Database
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+                <hr>
+                <div class="row">
+                    <div class="col-md-2 col-xs-12">
+                        <h6>ID:</h6>
+                    </div>
+                    <div class="col-md-10 col-xs-12">
+                        <h6>12345</h6>
+                    </div>
+                </div>
+                <div class="row mt-2">
+                    <div class="col-md-3 col-xs-12">
+                        <h6>User:</h6>
+                    </div>
+                    <div class="col-md-8 col-xs-12">
+                        <h6>Kent Anthony</h6>
+                    </div>
+                </div>
+                <div class=" mt-4">
+                    <a href="../../index.html" class="btn btn-signout" title="SIGN OUT">
+                        <i class="bi bi-box-arrow-left"></i>
+                        <span>
+                            &nbsp; SIGN OUT
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div> <!-- end of sidenav -->
+
+        <div class="container p-5" id="table">
+            <div class="container mt-5">
+                <a href="account.html" class="text-secondary">
+                    <i class="bi bi-arrow-left"></i>
+                    &nbsp;Back
+                </a>
+            </div>
+            <h1 class="text-center mt-5 mb-2"><strong>Change Password</strong></h1>
+            <form action="#" method="post">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="form-floating mt-4">
+                                <input type="password" id="old_password" name="old_password" class="form-control" placeholder="Old Password" required/>
+                                <label for="old_password">Old Password</label>
+                            </div>
+                            <div class="form-floating mt-4">
+                                <input type="password" id="new_password" name="new_password" class="form-control" placeholder="New Password" required/>
+                                <label for="new_password">New Password</label>
+                            </div>
+                            <div class="form-floating mt-4">
+                                <input type="password" id="confirm_password" name="confirm_password" class="form-control" placeholder="Confirm Password" required/>
+                                <label for="confirm_password">Confirm Password</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container mt-2">
+                    <button class="btn-profile mt-3">
+                        <i class="bi bi-arrow-left-right"></i>
+                        &nbsp;Change</button>
+                    <button type="reset" class="btn-profile mt-3">
+                        <i class="bi bi-arrow-clockwise"></i>
+                        &nbsp;Reset</button>
+                </div>
+            </form>
+        </div>
+        <!-- Backup Database Modal-->
+        <div class="modal fade" id="backupModal">
+            <div class="modal-dialog modal-md">
+                <div class="modal-content">
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h3 class="modal-title">Backup Database</h3>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <p class="text-center text-success">Database backup has been successfully saved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End of Backup Database Modal-->
+    </main>
+</body>
+
+</html>

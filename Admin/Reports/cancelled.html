@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../style.css" />
+    <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css" />
+    <script src="../../bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../../bootstrap-icons/bootstrap-icons.css" />
+    <link rel="icon" href="../../images/logo1.png">
+    <title>Keonibeng</title>
+</head>
+
+<body>
+    <header>
+
+    </header>
+
+    <main>
+        <div class="sidenav">
+            <div class="sidenav-content">
+                <div class="logo">
+                    <img src="../../images/Logo_Transpa.png" width="80px" />
+                </div>
+                <hr>
+                <h5 class="mb-3">Reports</h5>
+                <ul>
+                    <li>
+                        <a href="pending.html" class="btn-sidenav" title="Pending">
+                            <i class="bi bi-clock-history"></i>
+                            <span>
+                                &nbsp; Pending
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="on-progress.html" class="btn-sidenav" title="On-progress">
+                            <i class="bi bi-bar-chart-steps"></i>
+                            <span>
+                                &nbsp; On-progress
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="delivered.html" class="btn-sidenav" title="Delivered">
+                            <i class="bi bi-cart-check"></i>
+                            <span>
+                                &nbsp; Delivered
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="cancelled.html" class="active" title="Cancelled">
+                            <i class="bi bi-exclamation-diamond"></i>
+                            <span>
+                                &nbsp; Cancelled
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="statistics.html" class="btn-sidenav" title="Statistics">
+                            <i class="bi bi-bar-chart-line"></i>
+                            <span>
+                                &nbsp; Statistics
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="financial-summary.html" class="btn-sidenav" title="Financial Summary">
+                            <i class="bi bi-receipt-cutoff"></i>
+                            <span>
+                                &nbsp; Financial Summary
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+                <hr>
+                <h5 class="mb-3">Settings</h5>
+                <ul>
+                    <li>
+                        <a href="../Settings/account.html" class="btn-sidenav" title="Account">
+                            <i class="bi bi-person-circle"></i>
+                            <span>
+                                &nbsp; Account
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../../Other/about.html" class="btn-sidenav" title="About">
+                            <i class="bi bi-info-circle"></i>
+                            <span>
+                                &nbsp; About
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="btn-sidenav" title="Backup Database" data-bs-toggle="modal"
+                        data-bs-target="#backupModal">
+                            <i class="bi bi-cloud-download"></i>
+                            <span>
+                                &nbsp; Backup Database
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+                <hr>
+                <div class="row">
+                    <div class="col-md-2 col-xs-12">
+                        <h6>ID:</h6>
+                    </div>
+                    <div class="col-md-10 col-xs-12">
+                        <h6>12345</h6>
+                    </div>
+                </div>
+                <div class="row mt-2">
+                    <div class="col-md-3 col-xs-12">
+                        <h6>User:</h6>
+                    </div>
+                    <div class="col-md-8 col-xs-12">
+                        <h6>Kent Anthony</h6>
+                    </div>
+                </div>
+                <div class="mt-4">
+                    <a href="../../index.html" class="btn btn-signout" title="SIGN OUT">
+                        <i class="bi bi-box-arrow-left"></i>
+                        <span>
+                            &nbsp; SIGN OUT
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div> <!-- end of sidenav -->
+        
+        <div class="container border rounded p-4 con-1" id="table">
+            <h1 class="text-center mb-5"><strong>CANCELLED REQUEST</strong></h1>
+            <div class="search">
+                <div class="me-2">
+                    <button class="btn-view">
+                        <i class="bi bi-box-arrow-down"></i>
+                        &nbsp;PDF</button>
+                    <button class="btn-view">
+                        <i class="bi bi-box-arrow-down"></i>
+                        &nbsp;XLS</button>
+                    <button class="btn-view">
+                        <i class="bi bi-box-arrow-down"></i>
+                        &nbsp;CSV</button>
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text">
+                        <i class="bi bi-search"></i>
+                    </span>
+                    <input type="text" class="form-control" placeholder="Requester name...">
+                </div>
+            </div>
+            <div class="container mb-4">
+                <div class="table-responsive">
+                    <table class="table table-hover text-center">
+                        <thead class="text-bg-secondary">
+                            <tr>
+                                <th>REQUESTER</th>
+                                <th>ADDRESS</th>
+                                <th>PHONE NO.</th>
+                                <th>ITEMS QUANTITY</th>
+                                <th>DELIVERY DATE</th>
+                                <th>REQUESTED SHOPPER</th>
+                                <th>MODE OF PAYMENT</th>
+                                <th>ACTION</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Chrollo</td>
+                                <td>Sagay City</td>
+                                <td>09123456789</td>
+                                <td>5</td>
+                                <td>April 17, 2023 - 01:00 PM</td>
+                                <td>Leorio</td>
+                                <td>Cash On Delivery</td>
+                                <td>
+                                    <a href="#">
+                                        <button class="btn-view" title="VIEW">
+                                            <i class="bi bi-eye p-1"></i>
+                                        </button>
+                                    </a>
+                                    <a href="#">
+                                        <button class="btn-restricted" title="ADD TO RESTRICTED REQUESTERS">
+                                            <i class="bi bi-plus-lg p-1"></i>
+                                        </button>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Ovugin</td>
+                                <td>Bacolod City</td>
+                                <td>09987654321</td>
+                                <td>9</td>
+                                <td>April 19, 2023 - 03:00 PM</td>
+                                <td>Gon Freecs</td>
+                                <td>GCash</td>
+                                <td>
+                                    <a href="#">
+                                        <button class="btn-view" title="VIEW">
+                                            <i class="bi bi-eye p-1"></i>
+                                        </button>
+                                    </a>
+                                    <a href="#">
+                                        <button class="btn-restricted" title="ADD TO RESTRICTED REQUESTERS">
+                                            <i class="bi bi-plus-lg p-1"></i>
+                                        </button>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Machi</td>
+                                <td>Cadiz City</td>
+                                <td>09019283746</td>
+                                <td>10</td>
+                                <td>April 21, 2023 - 05:00 PM</td>
+                                <td>Kurapika Curta</td>
+                                <td>GCash</td>
+                                <td>
+                                    <a href="#">
+                                        <button class="btn-view" title="VIEW">
+                                            <i class="bi bi-eye p-1"></i>
+                                        </button>
+                                    </a>
+                                    <a href="#">
+                                        <button class="btn-restricted" title="ADD TO RESTRICTED REQUESTERS">
+                                            <i class="bi bi-plus-lg p-1"></i>
+                                        </button>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Nubonaga</td>
+                                <td>Bago City</td>
+                                <td>09128734654</td>
+                                <td>4</td>
+                                <td>April 23, 2023 - 09:00 AM</td>
+                                <td>Leorio</td>
+                                <td>Cash On Delivery</td>
+                                <td>
+                                    <a href="#">
+                                        <button class="btn-view" title="VIEW">
+                                            <i class="bi bi-eye p-1"></i>
+                                        </button>
+                                    </a>
+                                    <a href="#">
+                                        <button class="btn-restricted" title="ADD TO RESTRICTED REQUESTERS">
+                                            <i class="bi bi-plus-lg p-1"></i>
+                                        </button>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Shizuko</td>
+                                <td>Escalante City</td>
+                                <td>09217843675</td>
+                                <td>7</td>
+                                <td>April 25, 2023 - 10:00 AM</td>
+                                <td>Kurapika Curta</td>
+                                <td>GCash</td>
+                                <td>
+                                    <a href="#">
+                                        <button class="btn-view" title="VIEW">
+                                            <i class="bi bi-eye p-1"></i>
+                                        </button>
+                                    </a>
+                                    <a href="#">
+                                        <button class="btn-restricted" title="ADD TO RESTRICTED REQUESTERS">
+                                            <i class="bi bi-plus-lg p-1"></i>
+                                        </button>
+                                    </a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="split">
+                <div>
+                    <p>TOTAL RECORD(S): 5</p>
+                </div>
+                <div>
+                    <span>Previous &nbsp;</span>
+                    <button class="btn-nav" title="Previous">
+                        <i class="bi bi-chevron-left p-1"></i>
+                    </button>
+                    <button class="btn-nav" title="Next">
+                        <i class="bi bi-chevron-right p-1"></i>
+                    </button>
+                    <span>&nbsp; Next</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Backup Database Modal-->
+        <div class="modal fade" id="backupModal">
+            <div class="modal-dialog modal-md">
+                <div class="modal-content">
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h3 class="modal-title">Backup Database</h3>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <p class="text-center text-success">Database backup has been successfully saved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End of Backup Database Modal-->
+    </main>
+</body>
+
+</html>

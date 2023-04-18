@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../style.css" />
+    <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css" />
+    <script src="../../bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../../bootstrap-icons/bootstrap-icons.css" />
+    <link rel="icon" href="../../images/logo1.png">
+    <title>Keonibeng</title>
+</head>
+
+<body>
+    <header>
+
+    </header>
+
+    <main>
+        <div class="sidenav">
+            <div class="sidenav-content">
+                <div class="logo">
+                    <img src="../../images/Logo_Transpa.png" width="80px" />
+                </div>
+                <hr>
+                <h5 class="mb-3">Reports</h5>
+                <ul>
+                    <li>
+                        <a href="pending.html" class="btn-sidenav" title="Pending">
+                            <i class="bi bi-clock-history"></i>
+                            <span>
+                                &nbsp; Pending
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="on-progress.html" class="btn-sidenav" title="On-progress">
+                            <i class="bi bi-bar-chart-steps"></i>
+                            <span>
+                                &nbsp; On-progress
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="delivered.html" class="btn-sidenav" title="Delivered">
+                            <i class="bi bi-cart-check"></i>
+                            <span>
+                                &nbsp; Delivered
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="cancelled.html" class="btn-sidenav" title="Cancelled">
+                            <i class="bi bi-exclamation-diamond"></i>
+                            <span>
+                                &nbsp; Cancelled
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="statistics.html" class="active" title="Statistics">
+                            <i class="bi bi-bar-chart-line"></i>
+                            <span>
+                                &nbsp; Statistics
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="financial-summary.html" class="btn-sidenav" title="Financial Summary">
+                            <i class="bi bi-receipt-cutoff"></i>
+                            <span>
+                                &nbsp; Financial Summary
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+                <hr>
+                <h5 class="mb-3">Settings</h5>
+                <ul>
+                    <li>
+                        <a href="../Settings/account.html" class="btn-sidenav" title="Account">
+                            <i class="bi bi-person-circle"></i>
+                            <span>
+                                &nbsp; Account
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../../Other/about.html" class="btn-sidenav" title="About">
+                            <i class="bi bi-info-circle"></i>
+                            <span>
+                                &nbsp; About
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="btn-sidenav" title="Backup Database" data-bs-toggle="modal"
+                            data-bs-target="#backupModal">
+                            <i class="bi bi-cloud-download"></i>
+                            <span>
+                                &nbsp; Backup Database
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+                <hr>
+                <div class="row">
+                    <div class="col-md-2 col-xs-12">
+                        <h6>ID:</h6>
+                    </div>
+                    <div class="col-md-10 col-xs-12">
+                        <h6>12345</h6>
+                    </div>
+                </div>
+                <div class="row mt-2">
+                    <div class="col-md-3 col-xs-12">
+                        <h6>User:</h6>
+                    </div>
+                    <div class="col-md-8 col-xs-12">
+                        <h6>Kent Anthony</h6>
+                    </div>
+                </div>
+                <div class=" mt-4">
+                    <a href="../../index.html" class="btn btn-sm btn-signout" title="SIGN OUT">
+                        <i class="bi bi-box-arrow-left"></i>
+                        <span>
+                            &nbsp; SIGN OUT
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div> <!-- end of sidenav -->
+
+        <div class="container border rounded p-4 con-1" id="table">
+            <h1 class="text-center mb-5"><strong>STATISTICAL ANALYSIS</strong></h1>
+            <div class="search">
+                <div class="input-group mb-3">
+                    <span class="input-group-text">
+                        <i class="bi bi-calendar"></i>
+                    </span>
+                    <select class="form-select">
+                        <option selected>-select filter-</option>
+                        <option>Week</option>
+                        <option>Month</option>
+                        <option>Year</option>
+                    </select>
+                </div>
+            </div>
+            <div class="statistics p-3">
+                <div class="row">
+                    <div class="col-lg-1">
+                        January
+                        <div class="row">
+                            <div class="col-lg-2">
+                                <div class="box-income1"></div>
+                            </div>
+                            <div class="col-lg-2">
+                                <div class="box-expenses1"></div>
+                            </div>
+                            <div class="col-lg-2">
+                                <div class="box-balance1"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-1">
+                        February
+                        <div class="row">
+                            <div class="col-lg-2">
+                                <div class="box-income2"></div>
+                            </div>
+                            <div class="col-lg-2">
+                                <div class="box-expenses2"></div>
+                            </div>
+                            <div class="col-lg-2">
+                                <div class="box-balance2"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-1">
+                        March
+                        <div class="row">
+                            <div class="col-lg-2">
+                                <div class="box-income3"></div>
+                            </div>
+                            <div class="col-lg-2">
+                                <div class="box-expenses3"></div>
+                            </div>
+                            <div class="col-lg-2">
+                                <div class="box-balance3"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-1">
+                        April
+                        <div class="row">
+                            <div class="col-lg-2">
+                                <div class="box-income4"></div>
+                            </div>
+                            <div class="col-lg-2">
+                                <div class="box-expenses4"></div>
+                            </div>
+                            <div class="col-lg-2">
+                                <div class="box-balance4"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-1">
+                        May
+                        <div class="row">
+                            <div class="col-lg-2">
+                                <div class="box-income5"></div>
+                            </div>
+                            <div class="col-lg-2">
+                                <div class="box-expenses5"></div>
+                            </div>
+                            <div class="col-lg-2">
+                                <div class="box-balance5"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-1">
+                        June
+                        <div class="row">
+                            <div class="col-lg-2">
+                                <div class="box-income6"></div>
+                            </div>
+                            <div class="col-lg-2">
+                                <div class="box-expenses6"></div>
+                            </div>
+                            <div class="col-lg-2">
+                                <div class="box-balance6"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-1">
+                        July
+                        <div class="row">
+                            <div class="col-lg-2">
+                                <div class="box-income7"></div>
+                            </div>
+                            <div class="col-lg-2">
+                                <div class="box-expenses7"></div>
+                            </div>
+                            <div class="col-lg-2">
+                                <div class="box-balance7"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-1">
+                        August
+                        <div class="row">
+                            <div class="col-lg-2">
+                                <div class="box-income8"></div>
+                            </div>
+                            <div class="col-lg-2">
+                                <div class="box-expenses8"></div>
+                            </div>
+                            <div class="col-lg-2">
+                                <div class="box-balance8"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-1">
+                        September
+                        <div class="row">
+                            <div class="col-lg-2">
+                                <div class="box-income9"></div>
+                            </div>
+                            <div class="col-lg-2">
+                                <div class="box-expenses9"></div>
+                            </div>
+                            <div class="col-lg-2">
+                                <div class="box-balance9"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-1">
+                        October
+                        <div class="row">
+                            <div class="col-lg-2">
+                                <div class="box-income10"></div>
+                            </div>
+                            <div class="col-lg-2">
+                                <div class="box-expenses10"></div>
+                            </div>
+                            <div class="col-lg-2">
+                                <div class="box-balance10"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-1">
+                        November
+                        <div class="row">
+                            <div class="col-lg-2">
+                                <div class="box-income11"></div>
+                            </div>
+                            <div class="col-lg-2">
+                                <div class="box-expenses11"></div>
+                            </div>
+                            <div class="col-lg-2">
+                                <div class="box-balance11"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-1">
+                        December
+                        <div class="row">
+                            <div class="col-lg-2">
+                                <div class="box-income12"></div>
+                            </div>
+                            <div class="col-lg-2">
+                                <div class="box-expenses12"></div>
+                            </div>
+                            <div class="col-lg-2">
+                                <div class="box-balance12"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="container mt-5">
+                <div class="marker">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="marker1"></div>
+                            <p>Income</p>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="marker2"></div>
+                            <p>Balance</p>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="marker3"></div>
+                            <p>Expenses</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Backup Database Modal-->
+        <div class="modal fade" id="backupModal">
+            <div class="modal-dialog modal-md">
+                <div class="modal-content">
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h3 class="modal-title">Backup Database</h3>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <p class="text-center text-success">Database backup has been successfully saved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End of Backup Database Modal-->
+    </main>
+</body>
+
+</html>

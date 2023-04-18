@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../style.css" />
+    <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css" />
+    <script src="../../bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../../bootstrap-icons/bootstrap-icons.css" />
+    <link rel="icon" href="../../images/logo1.png">
+    <title>Keonibeng</title>
+</head>
+
+<body>
+    <header>
+
+    </header>
+
+    <main>
+        <div class="sidenav">
+            <div class="sidenav-content">
+                <div class="logo">
+                    <img src="../../images/Logo_Transpa.png" alt="Keonibeng Logo" width="80px" />
+                </div>
+                <hr>
+                <h5 class="mb-3">Reports</h5>
+                <ul>
+                    <li>
+                        <a href="../Reports/pending.html" class="btn-sidenav" title="Pending">
+                            <i class="bi bi-clock-history"></i>
+                            <span>
+                                &nbsp; Pending
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../Reports/on-progress.html" class="btn-sidenav" title="On-progress">
+                            <i class="bi bi-bar-chart-steps"></i>
+                            <span>
+                                &nbsp; On-progress
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../Reports/delivered.html" class="btn-sidenav" title="Delivered">
+                            <i class="bi bi-cart-check"></i>
+                            <span>
+                                &nbsp; Delivered
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../Reports/cancelled.html" class="btn-sidenav" title="Cancelled">
+                            <i class="bi bi-exclamation-diamond"></i>
+                            <span>
+                                &nbsp; Cancelled
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../Reports/statistics.html" class="btn-sidenav" title="Statistics">
+                            <i class="bi bi-bar-chart-line"></i>
+                            <span>
+                                &nbsp; Statistics
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../Reports/financial-summary.html" class="btn-sidenav" title="Financial Summary">
+                            <i class="bi bi-receipt-cutoff"></i>
+                            <span>
+                                &nbsp; Financial Summary
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+                <hr>
+                <h5 class="mb-3">Settings</h5>
+                <ul>
+                    <li>
+                        <a href="../Settings/account.html" class="active" title="Account">
+                            <i class="bi bi-person-circle"></i>
+                            <span>
+                                &nbsp; Account
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../../Other/about.html" class="btn-sidenav" title="About">
+                            <i class="bi bi-info-circle"></i>
+                            <span>
+                                &nbsp; About
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="btn-sidenav" title="Backup Database" data-bs-toggle="modal"
+                            data-bs-target="#backupModal">
+                            <i class="bi bi-cloud-download"></i>
+                            <span>
+                                &nbsp; Backup Database
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+                <hr>
+                <div class="row">
+                    <div class="col-md-2 col-xs-12">
+                        <h6>ID:</h6>
+                    </div>
+                    <div class="col-md-10 col-xs-12">
+                        <h6>12345</h6>
+                    </div>
+                </div>
+                <div class="row mt-2">
+                    <div class="col-md-3 col-xs-12">
+                        <h6>User:</h6>
+                    </div>
+                    <div class="col-md-8 col-xs-12">
+                        <h6>Kent Anthony</h6>
+                    </div>
+                </div>
+                <div class=" mt-4">
+                    <a href="../../index.html" class="btn btn-signout" title="SIGN OUT">
+                        <i class="bi bi-box-arrow-left"></i>
+                        <span>
+                            &nbsp; SIGN OUT
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div> <!-- end of sidenav -->
+
+        <div class="container p-5" id="table">
+            <h1 class="text-center mb-4"><strong>Profile</strong></h1>
+            <div class="pp">
+                <img src="../../images/J.png" alt="Profile Picture" width="170" />
+                <button class="btn-profile mt-4">
+                    <i class="bi bi-arrow-left-right"></i>
+                    &nbsp;Change Profile Picture
+                </button>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 col-sm-12">
+                        <label for="name">Name</label>
+                        <input type="text" value="Juan Delacruz" id="name" class="form-control mb-3" required />                       
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12">
+                        <label for="name">Phone Number</label>
+                        <input type="number" value="01234567890" id="number" class="form-control mb-3" required />
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12">
+                        <label for="address">Address</label>
+                        <input type="text" value="Bacolod City" id="address" class="form-control mb-3" required />
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12">
+                        <label for="email">Email</label>
+                        <input type="email" value="juandelacruz@outlook.com" id="email" class="form-control mb-3" required />
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12">
+                        <label for="username">Username</label>
+                        <input type="text" value="juan_pogi2023" id="username" class="form-control mb-3" required />
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12">
+                        <label for="password">Password</label>
+                        <input type="password" placeholder="********" id="password" class="form-control mb-1" readonly />
+                        <a href="change-pass.html">Change password
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="container mt-2">
+                <button class="btn-profile mt-3" data-bs-target="#updateModal" data-bs-toggle="modal">
+                    <i class="bi bi-arrow-clockwise"></i>
+                    &nbsp;Update</button>
+                <button class="btn-deactivate mt-3" data-bs-target="#deactivateModal" data-bs-toggle="modal">
+                    <i class="bi bi-person-x"></i>
+                    &nbsp;Deactivate Account</button>
+            </div>
+            
+        </div>
+        <!-- Update Modal-->
+        <div class="modal fade" id="updateModal">
+            <div class="modal-dialog modal-md">
+                <div class="modal-content">
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h3 class="modal-title">Update Account</h3>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <p class="text-center text-success" class="mb-5">Account updated successfully.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End of Update Modal-->
+        <!-- Deactivate Modal-->
+        <div class="modal fade" id="deactivateModal">
+            <div class="modal-dialog modal-md">
+                <div class="modal-content">
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h3 class="modal-title">Confirmation</h3>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <p class="text-center text-danger" class="mb-5">Are you sure you want to deactivate your account?</p>
+                        <div class="split mt-5">
+                            <div></div>
+                            <div>
+                                <button type="button" data-bs-dismiss="modal" class="btn-deactivate">Yes</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End of Deactivate Modal-->
+        <!-- Backup Database Modal-->
+        <div class="modal fade" id="backupModal">
+            <div class="modal-dialog modal-md">
+                <div class="modal-content">
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h3 class="modal-title">Backup Database</h3>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <p class="text-center text-success">Database backup has been saved successfully.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End of Backup Database Modal-->
+    </main>
+</body>
+
+</html>
