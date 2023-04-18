@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css" />
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../bootstrap-icons/bootstrap-icons.css" />
+    <link rel="icon" href="../images/logo1.png">
+    <title>Keonibeng</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md fixed-top">
+            <img src="../images/Logo_Transpa.png" alt="Keonibeng Logo" class="logo" width="40px" />
+            <button class="navbar-toggler me-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav align-items-center justify-content-center">
+                    <li class="mt-2">
+                        <a href="home.html" class="nav-link" title="Home"><i class="bi bi-house"></i></a>
+                    </li>
+                    <li class="mt-2">
+                        <a href="account.html" class="nav-link" title="Account"><i class="bi bi-person-circle"></i></a>
+                    </li>
+                    <li class="mt-2">
+                        <a href="notification.html" class="nav-link position-relative" title="Notifications">
+                            <i class="bi bi-bell"></i>
+                            <span class="position-absolute top-2 start-50 translate-middle badge rounded-pill bg-danger">
+                                2
+                            </span>
+                        </a>
+                    </li>
+                    <li class="mt-2">
+                        <a href="#" class="nav-link" title="Call Now!"><i class="bi bi-telephone"></i></a>
+                    </li>
+                    <li class="mt-2">
+                        <a href="help.html" class="nav-link" title="Help?"><i class="bi bi-question-circle"></i></a>
+                    </li>
+                    <li class="mt-2">
+                        <a href="../Other/about.html" class="nav-link" title="About"><i class="bi bi-info-circle"></i></a>
+                    </li>
+                    <li class="mt-2">
+                        <a href="../index.html" class="nav-link" title="Logout"><i class="bi bi-box-arrow-right"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container mt-5" id="success">
+            <div class="success-container">
+                <ul>
+                    <li>
+                        <img src="../images/basket-check1.png" alt="Basket Image" width="130" />
+                    </li>
+                    <li>
+                        <h1>REQUEST SUBMITTED SUCCESSFULLY</h1>
+                    </li>
+                    <li>
+                        <a href="notification.html">
+                            <button class="btn-custom"><strong>Track Progress</strong>
+                            <i class="bi bi-arrow-right-short"></i>
+                        </button>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="home.html" class=""><strong><u>REQUEST ANOTHER ITEMS</u></strong></a>
+                    </li>
+                    <li>
+                        <a href="rate.html" class=""><strong><u>RATE US</u></strong></a>
+                    </li>
+                </ul>
+            </div>
+            
+        </div>
+    </main>
+    <footer>
+        <a href="##" id="toggleChatbox">
+            <i class="bi bi-chat-dots-fill" title="Chat with us!" id="chat"></i>
+        </a>
+        <div class="chatbox" id="chatBox">
+            <div class="chatbox-header">
+                <i class="bi bi-x" id="close" title="Close"></i>
+            </div>
+            <div class="chatbox-body">
+                <ul>
+                    <li>
+                        <img src="../images/man_holding_heart.svg" alt="Man Holding Heart">
+                    </li>
+                    <li class="chat">
+                        <p>Good day! How can we help you?</p>
+                    </li>
+                    <li>
+                        <i class="bi bi-person-circle"></i>
+                        <div class="chat-typing">
+                            <div class="chat-typing-indicators">
+                                <div class="chat-typing-indicator"></div>
+                                <div class="chat-typing-indicator"></div>
+                                <div class="chat-typing-indicator"></div>
+                            </div>
+                        </div>
+                        
+                    </li>
+                </ul>
+            </div>
+            <div class="chatbox-footer">
+                <i class="bi bi-camera-fill"></i>
+                <input type="text" placeholder="Type here..." />
+                <i class="bi bi-send" title="Send"></i>
+            </div>
+        </div>
+        <div class="section">
+            <p class="text-white">Visit <span>our social links</span></p>
+            <div class="social-links">
+                <a href="https://facebook.com/Keonibeng" class="" target="_blank" title="Facebook">
+                    <i class="bi bi-facebook"></i>
+                </a>
+                <a href="https://instagram.com/Keonibeng" class="" target="_blank" title="Intagram">
+                    <i class="bi bi-instagram"></i>
+                </a>
+                <a href="https://twitter.com/Keonibeng" class="" target="_blank" title="Twitter">
+                    <i class="bi bi-twitter"></i>
+                </a>
+            </div>
+            <p class="text-white">Subscribe <span>to newsletter</span></p>
+            <input type="email" class="form-control" name="email" placeholder="Enter email..." />
+            <input type="button" value="Submit" class="btn btn-secondary ms-2" />
+        </div>
+    </footer>
+</body>
+
+</html>
