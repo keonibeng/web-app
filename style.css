@@ -1,9 +1,22 @@
 /* TABLE OF CONTENTS 
 
-HOME
+Line 21 - root
+Line 58 - NAVIGATION BAR
+Line 91 - LOGIN AND SIGN UP
+Line 162 - SIDE NAVIGATION
+Line 256 - HOME AND PAYMENT
+Line 334 - SUCCESS
+Line 366 - RATE
+Line 440 -  for TABLE
+Line 472 - STATISTICS
+Line 762 - ACCOUNT
+Line 804 - NOTIFICATIONS
+Line 848 - ABOUT
+Line 855 - HELP
+Line 885 - buttons
+Line 1004 - FOOTER
 
 */
-
 
 
 :root {
@@ -65,6 +78,15 @@ p {
     color: var(--tertiary-color);
     transition: 0.5s;
 }
+
+.navbar .navbar-toggler {
+    background-color: transparent;
+}
+
+.navbar .navbar-toggler .navbar-toggler-icon {
+    filter: invert(100%);
+}
+
 .rounded-pill {
     margin-left: 10px;
     border: 1px solid var(--light-color);
