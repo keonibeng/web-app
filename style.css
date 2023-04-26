@@ -898,6 +898,16 @@ table a {
     flex-direction: column;
 }
 
+.pp img {
+    border-radius: 50%;
+    border: 1px solid var(--secondary-color);
+    width: 170px;
+}
+
+.pp input[type="file"] {
+    display: none;
+}
+
 .btn-profile {
     border: none;
     border-radius: 5px;
