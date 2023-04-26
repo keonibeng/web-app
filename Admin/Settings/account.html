@@ -137,12 +137,16 @@
 
         <div class="container p-5" id="table">
             <h1 class="text-center mb-4"><strong>Profile</strong></h1>
-            <div class="pp">
-                <img src="../../images/J.png" alt="Profile Picture" width="170" />
-                <button class="btn-profile mt-4">
-                    <i class="bi bi-arrow-left-right"></i>
-                    &nbsp;Change Profile Picture
-                </button>
+             <div class="pp">
+                <img src="../../images/J.png" alt="Profile Picture" width="170" id="default_pp" />
+                <div id="image-preview"></div>
+                <form id="upload-form" enctype="multipart/form-data">
+                    <label for="image-upload" class="btn-profile mt-4" onclick="upload_pp()" id="upload-pp">
+                        <i class="bi bi-arrow-left-right"></i>
+                        &nbsp; Change Image
+                    </label>
+                    <input type="file" id="image-upload" name="image-upload" accept="image/*">
+                </form>
             </div>
             <div class="container">
                 <div class="row">
